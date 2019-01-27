@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta  name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+			<img class="logo" src="img/logo.svg" alt="23andfour logo">
+
+			<nav class="">
+				<a href="#" class="hide-desktop">
+					<img src="img/ham.svg" alt="toggle menu" class="menu" id="menu">
+				</a>
+
+				<ul class="show-desktop hide-mobile" id="nav">
+					<li id="exit" class="exit-btn hide-desktop"><img src="img/exit.svg" alt="exit menu"></li>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section>
+			<img src="img/server.svg" alt="server graphic" class="server">
+
+			<h1>Web Hosting for the Modern Era</h1>
+			<p class="subhead">Go serverless and pay only for what you use.</p>
+			<img src="img/scroll.svg" alt="scroll down" class="scroll hide-mobile show-desktop">
+		</section>
+	</div>
+	<div class="blue-container">
+		<div class="container">
+            <ul>
+                <li>
+                    <img src="img/icon-1.svg" alt="Calendar icon">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </li>
+                <li>
+                    <img src="img/icon-2.svg" alt="Calendar icon">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </li>
+                <li>
+                    <img src="img/icon-3.svg" alt="Calendar icon">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </li>
+            </ul>
+		</div>
+	</div>
+	<div class="gray-container">
+		<div class="container">
+			<ul>
+				<li>
+					<figure>
+						<img src="img/user1.png" alt="User testimonial picture">
+						<blockquote>
+							Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+						</blockquote>
+						<figcaption>- Jane Doe</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<img src="img/user2.png" alt="User testimonial picture">
+						<blockquote>
+							Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+						</blockquote>
+						<figcaption>- Jhon Doe</figcaption>
+					</figure>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="container">
+		<h2>Start your free trail now!</h2>
+		<a href="#" class="cta">Get Started</a>
+	</div>
+	<footer>
+		<div class="footer-container">
+			<div class="container">
+				<a href="#">
+					<img src="img/logo-white.svg" class="logo" alt="logo">
+				</a>
+				<p class="address">Melrose Place, 90210<br>USA</p>
+				<ul class="footer-links">
+					<li><a href="#">Terms of Service</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+<script>
+
+var menu = document.getElementById('menu');
+var nav = document.getElementById('nav');
+var exit = document.getElementById('exit');
+
+menu.addEventListener('click', function(e) {
+	nav.classList.toggle('hide-mobile');
+	e.prebentDefault();
+});
+
+exit.addEventListener('click', function(e) {
+	nav.classList.add('hide-mobile');
+	e.prebentDefault();
+});
+
+</script>
+
+</body>
+</html>
